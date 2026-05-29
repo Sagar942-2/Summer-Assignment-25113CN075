@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int prod=1,n,num,r;
+    printf("Enter Any Number");
+    scanf("%d",&n);
+    num=n;
+    while(n>0)
+    {
+        r=n%10;
+        prod=prod*r;
+        n=n/10;
+    }
+    printf("The Product of Digits of %d is %d", num, prod);
+    return 0;
+}
